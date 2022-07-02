@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write 'src/**/*.ts'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,9 @@
     "@types/inquirer": "^8.2.1",
     "@types/node": "^18.0.0",
     "esbuild": "^0.14.48",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "rollup": "^2.75.7",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-esbuild": "^4.9.1"
@@ -44,5 +49,8 @@
     "axios": "^0.27.2",
     "commander": "^9.3.0",
     "inquirer": "^8.2.1"
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write"
   }
 }

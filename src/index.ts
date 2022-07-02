@@ -36,8 +36,7 @@ program
       );
 
       if (!gitignoreFile) {
-        const jsWarning =
-          language.toLowerCase() === "javascript" ? ' - Did you mean "Node"?' : "";
+        const jsWarning = language.toLowerCase() === "javascript" ? ' - Did you mean "Node"?' : "";
         console.error(chalk.red(`No gitignore file found for "${language}"${jsWarning}`));
         process.exit(1);
       }
