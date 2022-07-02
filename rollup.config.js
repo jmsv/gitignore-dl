@@ -3,7 +3,6 @@ import esbuild from "rollup-plugin-esbuild";
 import json from "@rollup/plugin-json";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import shebang from "rollup-plugin-preserve-shebang";
 
 const name = require("./package.json").main.replace(/\.js$/, "");
 const input = "src/index.ts";
@@ -16,7 +15,6 @@ export default [
       json(),
       nodeResolve(),
       commonjs(),
-      shebang(),
     ],
     output: [
       {
