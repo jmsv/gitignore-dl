@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from "commander";
 import inquirer from "inquirer";
 import chalk from "chalk";
