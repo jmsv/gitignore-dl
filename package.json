@@ -1,6 +1,6 @@
 {
   "name": "gitignore-dl",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "CLI tool to get a .gitignore file for your language from GitHub's collection",
   "main": "dist/gitignore-dl.js",
   "module": "dist/gitignore-dl.mjs",
