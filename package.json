@@ -1,0 +1,48 @@
+{
+  "name": "getgitignore",
+  "version": "0.1.0",
+  "description": "CLI tool to get a .gitignore file for your language from GitHub's collection",
+  "main": "dist/getgitignore.js",
+  "module": "dist/getgitignore.mjs",
+  "typings": "dist/getgitignore.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jmsv/getgitignore.git"
+  },
+  "keywords": [
+    "gitignore",
+    "github",
+    "node",
+    "typescript",
+    "cli"
+  ],
+  "author": "James Vickery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmsv/getgitignore/issues"
+  },
+  "homepage": "https://github.com/jmsv/getgitignore#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^18.0.0",
+    "esbuild": "^0.14.48",
+    "rollup": "^2.75.7",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.9.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "commander": "^9.3.0",
+    "inquirer": "^8.2.1"
+  }
+}
